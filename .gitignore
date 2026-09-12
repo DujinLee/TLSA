@@ -1,0 +1,21 @@
+# run artefacts
+output/
+wandb/
+*.pth
+
+# data
+data/
+datasets/*/
+!datasets/*.py
+!datasets/*.md
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,34 @@
+# Direct dependencies of TLSA, pinned to the versions we ran the experiments
+# with (Python 3.10, CUDA 12.1).
+#
+# Do NOT install the `clip` package from PyPI or from openai/CLIP: this
+# repository bundles a modified copy under `clip/` that adds AdaptFormer
+# adapters to the CLIP vision transformer, and it must shadow any installed
+# copy.  `main.py` puts the repository root first on sys.path for that reason.
+
+torch==2.2.2
+torchvision==0.17.2
+
+# CLIP text tokeniser dependencies (the bundled clip/ package needs these)
+ftfy==6.3.1
+regex==2026.1.15
+
+# generative VLM: BLIP-VQA
+salesforce-lavis==1.0.2
+timm==0.4.12
+transformers==4.26.1
+
+# generative VLM: Qwen3-VL through an OpenAI-compatible server (optional,
+# only needed for `--vlm qwen`)
+openai==2.24.0
+
+numpy==1.26.4
+scikit-learn==1.7.2
+nltk==3.9.2
+faiss-cpu==1.13.2
+easydict==1.13
+Pillow==12.0.0
+tqdm==4.67.1
+
+# optional: training curves for the self-training stage (`--wandb`)
+wandb==0.24.0
