@@ -1,7 +1,13 @@
 # TLSA: Training-free Label Space Alignment for Universal Domain Adaptation
 
-Official implementation of **"Training-Free Label Space Alignment for Universal
-Domain Adaptation"** (Engineering Applications of Artificial Intelligence).
+Official implementation of **"Training-free Label Space Alignment for Universal
+Domain Adaptation"**, Engineering Applications of Artificial Intelligence 181
+(2026) 115558.
+
+[Paper](https://doi.org/10.1016/j.engappai.2026.115558) ·
+[arXiv](https://arxiv.org/abs/2509.17452)
+
+Dujin Lee, Sojung An, Jungmyung Wi, Kuniaki Saito, Donghyun Kim
 
 ![TLSA pipeline](assets/pipeline.png)
 
@@ -194,9 +200,15 @@ and the adapters follow
 ## Citation
 
 ```bibtex
-@article{tlsa,
-  title   = {Training-Free Label Space Alignment for Universal Domain Adaptation},
-  journal = {Engineering Applications of Artificial Intelligence},
-  year    = {2026}
+@article{Lee2026TrainingFree,
+  title     = {Training-free label space alignment for universal domain adaptation},
+  author    = {Lee, Dujin and An, Sojung and Wi, Jungmyung and Saito, Kuniaki and Kim, Donghyun},
+  journal   = {Engineering Applications of Artificial Intelligence},
+  volume    = {181},
+  pages     = {115558},
+  year      = {2026},
+  issn      = {0952-1976},
+  doi       = {10.1016/j.engappai.2026.115558},
+  publisher = {Elsevier}
 }
 ```
